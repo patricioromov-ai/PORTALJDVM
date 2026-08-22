@@ -51,6 +51,21 @@
   .icono.d{background:#E5E0F0;color:var(--torre-d);}
   .icono.ink{background:#E2E4EA;color:var(--ink);}
 
+  .destacado{
+    display:flex;align-items:center;gap:14px;
+    max-width:820px;width:100%;margin:0 0 24px;
+    background:linear-gradient(90deg, var(--torre-c), #E0A83E);
+    color:#2A1F04;text-decoration:none;
+    padding:16px 22px;border-radius:12px;
+    box-shadow:0 4px 14px rgba(201,138,44,0.35);
+    transition:transform 0.15s, box-shadow 0.15s;
+  }
+  .destacado:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(201,138,44,0.45);}
+  .destacado-icono{font-size:1.5rem;}
+  .destacado strong{display:block;font-size:1rem;font-family:'Fraunces',serif;}
+  .destacado-sub{display:block;font-size:0.78rem;opacity:0.8;margin-top:2px;}
+  .destacado-flecha{margin-left:auto;font-size:1.3rem;}
+
   .proximamente{
     margin-top:28px;max-width:820px;width:100%;
   }
@@ -78,6 +93,15 @@
     <h1>Jardines de Vicuña Mackenna</h1>
     <p>Elige una herramienta para comenzar</p>
   </div>
+
+  <a href="https://clientes.edifito.com/main.php?prm0=0x0010" target="_blank" class="destacado">
+    <span class="destacado-icono">🏢</span>
+    <span>
+      <strong>Portal Edifito</strong>
+      <span class="destacado-sub">Acceso al sistema de administración</span>
+    </span>
+    <span class="destacado-flecha">→</span>
+  </a>
 
   <div class="grid">
     <a class="app-tile" href="https://patricioromov-ai.github.io/jdvm-comunicados/" target="_blank">
